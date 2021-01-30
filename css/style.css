@@ -1,3 +1,37 @@
+/*Fonts*/
+
+@font-face {
+  font-family: sans-serif;
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
+       font-weight: 800;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: sans-serif;
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+       font-weight: 300;
+       font-style: normal;
+
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -15,6 +49,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/*Variables*/
+
 :root {
   --basic-black: #000000;
   --basic-extra-dark: #363636;
@@ -28,5 +64,8 @@ input[type="radio"].visually-hidden {
   --special: #91c92f;
 
   --status: #f6dada;
+}
 
+body{
+  color: var(--basic-white);
 }
