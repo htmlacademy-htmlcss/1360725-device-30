@@ -1,3 +1,4 @@
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -12,4 +13,20 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #363636;
+  --basic-dark: #464646;
+  --basic-neutral: #7e7e7e;
+  --basic-extra-light: #e5e5e5;
+  --basic-white: #ffffff;
+
+  --special-dark: #f0c52e;
+  --special-light: #f7e296;
+  --special: #91c92f;
+
+  --status: #f6dada;
+
 }
