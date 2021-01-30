@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-      <title>Каталог - HTML Academy: Девайс</title>
+      <title>Моноподы для селфи</title>
   </head>
   <body>
     <header>
@@ -27,7 +27,7 @@
     </header>
     <main>
       <h1>Моноподы для селфи</h1>
-      <ul>
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
@@ -36,8 +36,12 @@
         <h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="get">
           <div>
-            <h3>Стоимость</h3>
-            <!-- Здесь будет декоративный слайдер цены -->
+            <h3 >Стоимость</h3>
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
             <p>от 0</p>
             <p>до 5000</p>
           </div>
@@ -107,7 +111,6 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <article>
-          <span class="visually-hidden">New</span>
           <a href="#" class="visually-hidden">В корзину</a>
           <a href="#" class="visually-hidden">Добавить к сравнению</a>
           <img src="https://via.placeholder.com/360x381" width="360" height="381" alt="">
@@ -115,7 +118,6 @@
           <p>1100 руб.</p>
         </article>
         <article>
-          <span class="visually-hidden">New</span>
           <a href="#" class="visually-hidden">В корзину</a>
           <a href="#" class="visually-hidden">Добавить к сравнению</a>
           <img src="https://via.placeholder.com/360x381" width="360" height="381" alt="">
@@ -123,7 +125,6 @@
           <p>1500 руб.</p>
         </article>
         <article>
-          <span class="visually-hidden">New</span>
           <a href="#" class="visually-hidden">В корзину</a>
           <a href="#" class="visually-hidden">Добавить к сравнению</a>
           <img src="https://via.placeholder.com/360x381" width="360" height="381" alt="">
@@ -139,7 +140,7 @@
           <p>1900 руб.</p>
         </article>
       </section>
-      <section class="catalog-nav">
+      <section class="pagination">
         <h2 class="visually-hidden">Навигация по каталогу</h2>
         <a>Назад</a>
         <ul>
