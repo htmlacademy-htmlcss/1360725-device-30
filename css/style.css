@@ -329,6 +329,7 @@ img {
 
 .breadcrumbs {
   grid-column: 2 / 4;
+  grid-row: 2 / 3;
   justify-self: start;
   display: flex;
   font-family: var(--opensans);
@@ -386,12 +387,14 @@ img {
 
 .sorting {
   grid-column: 2 / 4;
-  grid-row: 2;
+  grid-row: 3;
   display: flex;
 }
 
 .sorting__list {
+  display: flex;
   list-style-type: none;
+
 }
 
 .sorting__item{
@@ -441,7 +444,7 @@ img {
 }
 
 .pagination {
-  grid-column: 2 / 3;
+  grid-column: 3 / 4;
   display: flex;
   align-items: center;
   justify-content: space-around;
