@@ -53,7 +53,7 @@
           </div>
           <fieldset class="filter__color">
             <legend class="filter__subtitle">Цвет</legend>
-            <ul>
+            <ul class="filter__list">
               <li>
                 <label class="filter__item">
                  <input type="checkbox" name="black" checked>
@@ -88,7 +88,7 @@
           </fieldset>
           <fieldset class="filter__bt">
             <legend class="filter__subtitle">Bluetooth</legend>
-            <ul>
+            <ul class="filter__list">
               <li>
                 <label class="filter__item">
                   <input type="radio" name="bluetooth" value="yes" checked>
@@ -103,58 +103,75 @@
               </li>
             </ul>
           </fieldset>
-          <input type="submit" value="Показать" class="button">
+          <button type="submit" class="button">Показать</button>
         </form>
       </section>
       <section class="sorting">
         <h2 class="sorting__title">Сортировка:</h2>
-        <ul>
-          <li><a class="sorting__item sorting__item--active">По цене</a></li>
-          <li><a href="#" class="sorting__item">По типу</a></li>
-          <li><a href="#" class="sorting__item">По популярности</a></li>
+        <ul class="sorting__list">
+          <li><a class="sorting__link sorting__link--active">По цене</a></li>
+          <li><a href="#" class="sorting__link">По типу</a></li>
+          <li><a href="#" class="sorting__link">По популярности</a></li>
         </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <article class="product">
-          <a href="#"><img src="img/jpg/items/item-1%201.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
-          <a href="#" class="visually-hidden product__cart button">В корзину</a>
-          <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
-          <p class="product__title">Любительская селфи-палка</p>
-          <p class="product__price">1100 руб.</p>
-        </article>
-        <article class="product">
-          <a href="#"><img src="img/jpg/items/item-2%201.jpg" height="380" width="360" alt="Профессиональная селфи-палка"></a>
-          <a href="#" class="visually-hidden product__cart button">В корзину</a>
-          <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
-          <p class="product__title">Профессиональная селфи-палка </p>
-          <p class="product__price">1500 руб.</p>
-        </article>
-        <article class="product">
-          <a href="#"><img src="img/jpg/items/item-3%201.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
-          <a href="#" class="visually-hidden product__cart button">В корзину</a>
-          <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
-          <p class="product__title">Непотопляемая селфи-палка</p>
-          <p class="product__price">1500 руб.</p>
-        </article>
-        <article class="product">
-          <span>New</span>
-          <a href="#"><img src="img/jpg/items/item-4%201.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной"></a>
-          <a href="#" class="visually-hidden product__cart button">В корзину</a>
-          <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
-          <p class="product__title">Селфи-палка "Следуй за мной"</p>
-          <p class="product__price">1900 руб.</p>
-        </article>
+        <div class="catalog__item">
+          <article class="product">
+            <a href="#"><img src="img/jpg/items/item-1%201.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
+            <a href="#" class="visually-hidden product__cart button">В корзину</a>
+            <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+            <p class="product__title">Любительская селфи-палка</p>
+            <p class="product__price">1100 руб.</p>
+          </article>
+        </div>
+        <div class="catalog__item">
+          <article class="product">
+            <a href="#"><img src="img/jpg/items/item-2%201.jpg" height="380" width="360" alt="Профессиональная селфи-палка"></a>
+            <a href="#" class="visually-hidden product__cart button">В корзину</a>
+            <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+            <p class="product__title">Профессиональная селфи-палка </p>
+            <p class="product__price">1500 руб.</p>
+          </article>
+        </div>
+        <div class="catalog__item">
+          <article class="product">
+            <a href="#"><img src="img/jpg/items/item-3%201.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+            <a href="#" class="visually-hidden product__cart button">В корзину</a>
+            <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+            <p class="product__title">Непотопляемая селфи-палка</p>
+            <p class="product__price">1500 руб.</p>
+          </article>
+        </div>
+        <div class="catalog__item">
+          <article class="product">
+            <a href="#"><img src="img/jpg/items/item-3%201.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+            <a href="#" class="visually-hidden product__cart button">В корзину</a>
+            <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+            <p class="product__title">Непотопляемая селфи-палка</p>
+            <p class="product__price">1500 руб.</p>
+          </article>
+        </div>
+        <div class="catalog__item">
+          <article class="product">
+            <span>New</span>
+            <a href="#"><img src="img/jpg/items/item-4%201.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной"></a>
+            <a href="#" class="visually-hidden product__cart button">В корзину</a>
+            <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+            <p class="product__title">Селфи-палка "Следуй за мной"</p>
+            <p class="product__price">1900 руб.</p>
+          </article>
+        </div>
       </section>
       <section class="pagination">
         <h2 class="visually-hidden">Навигация по каталогу</h2>
-        <a class="pagination__item">Назад</a>
-        <ul>
-          <li><a class="pagination__item">1</a></li>
-          <li><a href="#" class="pagination__item pagination__item--inactive">2</a></li>
-          <li><a href="#" class="pagination__item pagination__item--inactive">3</a></li>
+        <a class="pagination__item pagination__item--prev">Назад</a>
+        <ul class="pagination__list">
+          <li><a class="pagination__item pagination__item--active">1</a></li>
+          <li><a href="#" class="pagination__item ">2</a></li>
+          <li><a href="#" class="pagination__item ">3</a></li>
         </ul>
-        <a href="#" class="pagination__item">Вперёд</a>
+        <a href="#" class="pagination__item pagination__item--next">Вперёд</a>
       </section>
     </main>
     <footer class="main-footer">
