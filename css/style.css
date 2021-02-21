@@ -10,14 +10,14 @@
   /*font-style: normal;*/
 }
 
-/*@font-face {*/
-/*  font-family: "Gilroy";*/
-/*  src: local("Gilroy"),*/
-/*       url("../fonts/gilroyextrabold.woff2") format("woff2"),*/
-/*       url("../fonts/gilroyextrabold.woff") format("woff");*/
-/*  font-weight: 800;*/
-/*  font-style: normal;*/
-/*}*/
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+       url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "OpenSans";
@@ -60,7 +60,9 @@ input[type="radio"].visually-hidden {
   --basic-dark: #363636;
   --basic-gray: #464646;
   --basic-neutral: #7e7e7e;
-  --basic-extra-light: #e5e5e5;
+  --basic-gray-dark: #DCDCDC;
+  --basic-gray-light: #e5e5e5;
+  --basic-gray-extralight: #ebebeb;
   --basic-white: #ffffff;
 
   --special-dark: #f0c52e;
@@ -316,20 +318,20 @@ img {
 }
 
 .catalog-main {
-  display: grid;
-  grid-template-columns: auto 400px 760px auto;
-  justify-items: center;
 
+}
+
+.catalog__content {
+  display: grid;
+  grid-template-columns: 328px 832px;
 }
 
 .main-title--catalog-page {
-  grid-column: 2 / 4;
   justify-self: start;
 }
 
+
 .breadcrumbs {
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
   justify-self: start;
   display: flex;
   font-family: var(--opensans);
@@ -340,15 +342,16 @@ img {
   color: var(--basic-black);
   list-style-type: none;
 }
-
 .breadcrumbs__item {
   opacity: 0.3;
 }
 
 .filter {
-  grid-row: 3 / 5;
-  grid-column: 2;
-  background-color: var(--basic-extra-light);
+  background-color: var(--basic-gray-light);
+}
+
+.filter__title {
+  background-color: var(--basic-gray-dark);
 }
 
 .filter__title, .sorting__title {
@@ -386,9 +389,8 @@ img {
 }
 
 .sorting {
-  grid-column: 2 / 4;
-  grid-row: 3;
   display: flex;
+  background-color: var(--basic-gray-light);
 }
 
 .sorting__list {
@@ -413,8 +415,6 @@ img {
 }
 
 .catalog {
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -444,10 +444,11 @@ img {
 }
 
 .pagination {
-  grid-column: 3 / 4;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  background-color: var(--basic-gray-extralight);
 }
 
 .pagination__list {
