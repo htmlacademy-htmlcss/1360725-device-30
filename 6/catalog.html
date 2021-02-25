@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+      <title>Моноподы для селфи</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1360725-device-30/6/">
+</head>
+  <body>
+    <header class="main-header container">
+    <a class="main-header__logo">
+      <img src="img/svg/logo/logo_black.svg" width="163" height="35" alt="Логотип магазина Девайс">
+    </a>
+    <div class="main-header__search">
+      <label>
+        <input type="search" placeholder="Поиск по сайту" class="search__search-field">
+      </label>
+    </div>
+    <ul class="user-nav">
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантии</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main class="catalog-main container">
+      <h1 class="main-title main-title--catalog-page">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html" class="breadcrumbs__item">Главная</a></li>
+        <li><a href="#" class="breadcrumbs__item">Каталог</a></li>
+        <li><a href="#" class="breadcrumbs__item">Моноподы для селфи</a></li>
+      </ul>
+      <div class="catalog__content">
+        <section class="filter">
+          <h2 class="filter__title">Фильтр:</h2>
+          <form action="https://echo.htmlacademy.ru/courses" method="get">
+            <div class="filter__price">
+              <h3 class="filter__subtitle">Стоимость</h3>
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+              <p class="min-price">от 0</p>
+              <p class="max-price">до 5000</p>
+            </div>
+            <fieldset class="filter__color">
+              <legend class="filter__subtitle">Цвет</legend>
+              <ul class="filter__list">
+                <li>
+                  <label class="filter__item">
+                    <input type="checkbox" name="black" checked>
+                    Чёрный
+                  </label>
+                </li>
+                <li>
+                  <label class="filter__item">
+                    <input type="checkbox" name="white">
+                    Белый
+                  </label>
+                </li>
+                <li>
+                  <label class="filter__item">
+                    <input type="checkbox" name="blue" checked>
+                    Синий
+                  </label>
+                </li>
+                <li>
+                  <label class="filter__item">
+                    <input type="checkbox" name="red" checked>
+                    Красный
+                  </label>
+                </li>
+                <li>
+                  <label class="filter__item">
+                    <input type="checkbox" name="pink">
+                    Розовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__bt">
+              <legend class="filter__subtitle">Bluetooth</legend>
+              <ul class="filter__list">
+                <li>
+                  <label class="filter__item">
+                    <input type="radio" name="bluetooth" value="yes" checked>
+                    Есть
+                  </label>
+                </li>
+                <li>
+                  <label class="filter__item">
+                    <input type="radio" name="bluetooth" value="no">
+                    Нет
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="button">Показать</button>
+          </form>
+        </section>
+        <div class="catalog__display">
+          <section class="sorting">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <ul class="sorting__list">
+              <li><a class="sorting__link sorting__link--active">По цене</a></li>
+              <li><a href="#" class="sorting__link">По типу</a></li>
+              <li><a href="#" class="sorting__link">По популярности</a></li>
+            </ul>
+          </section>
+          <section class="catalog">
+            <h2 class="visually-hidden">Каталог</h2>
+            <div class="catalog__item">
+              <article class="product">
+                <a href="#"><img src="img/jpg/items/item-1%201.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
+                <a href="#" class="visually-hidden product__cart button">В корзину</a>
+                <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+                <p class="product__title">Любительская селфи-палка</p>
+                <p class="product__price">1100 руб.</p>
+              </article>
+            </div>
+            <div class="catalog__item">
+              <article class="product">
+                <a href="#"><img src="img/jpg/items/item-2%201.jpg" height="380" width="360" alt="Профессиональная селфи-палка"></a>
+                <a href="#" class="visually-hidden product__cart button">В корзину</a>
+                <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+                <p class="product__title">Профессиональная селфи-палка </p>
+                <p class="product__price">1500 руб.</p>
+              </article>
+            </div>
+            <div class="catalog__item">
+              <article class="product">
+                <a href="#"><img src="img/jpg/items/item-3%201.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+                <a href="#" class="visually-hidden product__cart button">В корзину</a>
+                <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+                <p class="product__title">Непотопляемая селфи-палка</p>
+                <p class="product__price">1500 руб.</p>
+              </article>
+            </div>
+            <div class="catalog__item">
+              <article class="product">
+                <span>New</span>
+                <a href="#"><img src="img/jpg/items/item-4%201.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной"></a>
+                <a href="#" class="visually-hidden product__cart button">В корзину</a>
+                <a href="#" class="visually-hidden product__compare">Добавить к сравнению</a>
+                <p class="product__title">Селфи-палка "Следуй за мной"</p>
+                <p class="product__price">1900 руб.</p>
+              </article>
+            </div>
+          </section>
+          <section class="pagination">
+            <h2 class="visually-hidden">Навигация по каталогу</h2>
+            <a class="pagination__item pagination__item--prev">Назад</a>
+            <ul class="pagination__list">
+              <li><a class="pagination__item pagination__item--active">1</a></li>
+              <li><a href="#" class="pagination__item ">2</a></li>
+              <li><a href="#" class="pagination__item ">3</a></li>
+            </ul>
+            <a href="#" class="pagination__item pagination__item--next">Вперёд</a>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container footer-grid">
+        <a class="main-footer__main-footer-logo">
+          <img src="img/svg/logo/logo_yellow.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
+        <ul class="user-nav user-nav--footer">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <address class="main-footer__address">г. Москва, ул. Строителей, 15</address>
+        <ul class="main-nav main-nav--footer">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="tel:+74954959595" class="main-footer__tel">Тел.: +7 (495) 495-95-95</a>
+      </div>
+    </footer>
+  </body>
+</html>
