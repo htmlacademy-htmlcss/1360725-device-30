@@ -221,6 +221,14 @@ img {
   opacity: 0.3;
 }
 
+.socials__item:hover {
+  opacity: 0.6;
+}
+
+.socials__item:active {
+  opacity: 0.1;
+}
+
 /*Header*/
 
 .main-header {
@@ -1020,6 +1028,7 @@ img {
   width: 32px;
   height: 32px;
   background-color: transparent;
+  opacity: 0.3;
 }
 
 .socials__item--fb {
