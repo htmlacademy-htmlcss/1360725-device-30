@@ -168,8 +168,7 @@ img {
 .user-nav__item:hover,
 .main-nav__item:hover,
 .main-footer__logo:hover,
-.developer-link:hover,
-.user-nav__footer-item::before:hover {
+.developer-link:hover {
   opacity: 0.6;
 }
 
@@ -177,8 +176,7 @@ img {
 .user-nav__item:active,
 .main-nav__item:active,
 .main-footer__logo:active,
-.developer-link:active,
-.user-nav__footer-item::before:active {
+.developer-link:active {
   opacity: 0.3;
 }
 
@@ -194,7 +192,7 @@ img {
   opacity: 1;
 }
 
-.categories__background:hover {
+.categories__item:hover .categories__background {
   background-color: var(--special-dark);
 }
 
