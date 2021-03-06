@@ -177,7 +177,7 @@ img {
 .user-nav__item:active,
 .main-nav__item:active,
 .main-footer__logo:active,
-.developer-link:active
+.developer-link:active,
 .user-nav__footer-item::before:active {
   opacity: 0.3;
 }
