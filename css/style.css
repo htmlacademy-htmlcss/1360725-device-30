@@ -397,13 +397,13 @@ img {
   background-color: var(--basic-white);
 }
 
-.slider-page__img {
+.slider__img {
   grid-row: 1 / 6;
   justify-self: center;
   align-self: end;
 }
 
-.page__number {
+.slider__page-number {
   font-style: normal;
   font-weight: 800;
   font-size: 179px;
@@ -415,17 +415,17 @@ img {
   top: -3px;
 }
 
-.slider-page__title, .main-title {
+.slider__title, .main-title {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
 }
 
-.slider-page__title {
+.slider__title {
   padding-top: 67px;
 }
 
-.slider-page__text {
+.slider__text {
   font-family: var(--opensans);
   font-style: normal;
   font-weight: 300;
@@ -642,14 +642,14 @@ img {
   margin-bottom: 129px;
 }
 
-.service-delivery__title{
+.services__title{
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
 }
 
-.service-delivery__text {
+.services__text {
   font-family: var(--opensans);
   font-style: normal;
   font-weight: 300;
