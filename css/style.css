@@ -232,6 +232,22 @@ img {
   background: transparent;
 }
 
+.sorting__link:hover {
+  opacity: 0.6;
+}
+
+.sorting__link:active {
+  opacity: 1;
+}
+
+.sorting__direction-btn:hover {
+  opacity: 0.4;
+}
+
+.sorting__direction-btn:active {
+  opacity: 1;
+}
+
 .user-nav__footer-item:hover {
   opacity: 1;
 }
