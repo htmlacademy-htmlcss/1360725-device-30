@@ -626,10 +626,18 @@ img {
 }
 
 .current-service {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   width: 277px;
   height: 40px;
   background-color: var(--basic-black);
   color: var(--special);
+  padding-right: 136px;
+  padding-left: 19px;
 }
 
 .services-grid::after {
