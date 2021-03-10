@@ -216,6 +216,22 @@ img {
   background-image: url("../img/png/brands/logo-4-1.png");
 }
 
+.breadcrumbs__item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__item:active {
+  opacity: 0.1;
+}
+
+.check-box:hover, .radio-btn:hover {
+  opacity: 0.6;
+}
+
+.filter__input:checked + .check-box:active, .filter__input:checked + .radio-btn:active {
+  background: transparent;
+}
+
 .user-nav__footer-item:hover {
   opacity: 1;
 }
@@ -904,10 +920,11 @@ img {
   border-radius: 2px;
   margin-left: -48px;
 }
-.filter__input:checked + .check-box {
+.filter__input:checked + .check-box, .filter__input + .check-box:active {
   background-image: url("../img/svg/icons/checked.svg");
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .filter__input:disabled + .check-box, .filter__input:disabled + .radio-btn {
@@ -924,10 +941,11 @@ img {
   margin-left: -48px;
 }
 
-.filter__input:checked + .radio-btn {
+.filter__input:checked + .radio-btn, .filter__input + .radio-btn:active {
   background-image: url("../img/svg/icons/radio-on.svg");
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .filter__submit {
